@@ -34,7 +34,22 @@
     .hero .clock {
         width: 100%;
         margin: 80px 0;
+        color: #fff;
     }
+        .hero .clock > .time {
+            width: 25%;
+            float: left;
+        }
+            .clock > .time > .value {
+                width: 100%;
+                font-size: 70px;
+                line-height: 70px;
+            }
+            .clock > .time > .label {
+                width: 100%;
+                font-size: 20px;
+                line-height: 20px;
+            }
     .hero .form {
         width: 90%;
         margin: 0 5% 20px;
@@ -49,4 +64,13 @@
         margin: 0;
         padding: 0 20px;
     }
+}
+@media (max-width: 500px) {
+    .hero .clock > .time {
+        width: 50%;
+    }
+        .hero .clock > .time:nth-child(1),
+        .hero .clock > .time:nth-child(2) {
+            margin-bottom: 30px;
+        }
 }
